@@ -46,18 +46,13 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('../web/bgrr.avif') no-repeat center center/cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url('fondo.jpg') no-repeat center center/cover;
     color: white;
-    height: 100vh; /* Pantalla completa */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .hero-content h1 {
@@ -71,7 +66,7 @@ header nav a:hover {
 }
 
 .hero-content button {
-    background:#FFD700;
+    background: #FFD700;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -162,8 +157,7 @@ footer {
 }
 /* Hero Section */
 .hero {
-    background-image: url('web/bgrr.avif');
-/*     background: url('web/bgrr.avif') no-repeat center center/cover;  */
+    background: url(/bgr.avif) no-repeat center center/cover;
     color: white;
     height: 100vh; /* Pantalla completa */
     display: flex;
@@ -187,7 +181,4 @@ footer {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejor visibilidad del texto */
     z-index: 0;
-}
-html {
-    scroll-behavior: smooth;
 }
