@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Importaciones USA</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -30,51 +32,49 @@
     </section>
 
     <!-- Sección de Servicios -->
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="servicios-grid">
-            <div class="servicio">
-                <h3>💳 Pago Flexible</h3>
-                <p>Paga la mitad al inicio y el resto al recibir.</p>
-            </div>
-            <div class="servicio">
-                <h3>🛒 Compra Personalizada</h3>
-                <p>Nos ajustamos a tus necesidades.</p>
-            </div>
-            <div class="servicio">
-                <h3>📦 Envío Seguro</h3>
-                <p>Garantizamos la entrega de tus productos.</p>
-            </div>
+   <!-- Sección de Servicios -->
+<section id="servicios" data-aos="fade-up">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-grid">
+        <div class="servicio" data-aos="fade-right" data-aos-delay="100">
+            <h3>💳 Pago Flexible</h3>
+            <p>Paga la mitad al inicio y el resto al recibir.</p>
         </div>
-    </section>
-
-    <!-- Sección de Productos -->
-    <section id="productos">
-        <h2>Productos Recientes</h2>
-        <div class="productos-grid">
-            <div class="producto">
-                <img src="producto1.jpg" alt="Producto 1">
-                <h3>Ropa Exclusiva</h3>
-                <p>Últimas tendencias de las mejores marcas.</p>
-            </div>
-            <div class="producto">
-                <img src="producto2.jpg" alt="Producto 2">
-                <h3>Sneakers Premium</h3>
-                <p>Ediciones limitadas directamente de USA.</p>
-            </div>
+        <div class="servicio" data-aos="fade-up" data-aos-delay="200">
+            <h3>🛒 Compra Personalizada</h3>
+            <p>Nos ajustamos a tus necesidades.</p>
         </div>
-    </section>
+        <div class="servicio" data-aos="fade-left" data-aos-delay="300">
+            <h3>📦 Envío Seguro</h3>
+            <p>Garantizamos la entrega de tus productos.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Sección de Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
+<!-- Sección de Productos -->
+<section id="productos" data-aos="fade-up">
+    <h2>Productos Recientes</h2>
+    <div class="productos-grid">
+        <div class="producto" data-aos="zoom-in" data-aos-delay="100">
+            <img src="producto1.jpg" alt="Producto 1">
+            <h3>Ropa Exclusiva</h3>
+            <p>Últimas tendencias de las mejores marcas.</p>
+        </div>
+        <div class="producto" data-aos="zoom-in" data-aos-delay="200">
+            <img src="producto2.jpg" alt="Producto 2">
+            <h3>Sneakers Premium</h3>
+            <p>Ediciones limitadas directamente de USA.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <form data-aos="zoom-in" data-aos-delay="100">
+        <!-- contenido del formulario -->
+    </form>
+</section>
 
     <!-- Pie de Página -->
     <footer>
@@ -87,6 +87,8 @@
             e.preventDefault();
             alert('¡Gracias por contactarnos! Te responderemos pronto.');
         });
+        AOS.init({
+            duration: 1000, once: false)}
     </script>
 </body>
 </html>
