@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importaciones USA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">ET Delivery</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>¡Porque llegar a casa es lo mas importante!</h1>
+            <p>Compra las mejores marcas de ropa y calzado directamente desde USA.</p>
+            <button onclick="window.location.href='#productos'">Explora Productos</button>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <h3>💳 Pago Flexible</h3>
+                <p>Paga la mitad al inicio y el resto al recibir.</p>
+            </div>
+            <div class="servicio">
+                <h3>🛒 Compra Personalizada</h3>
+                <p>Nos ajustamos a tus necesidades.</p>
+            </div>
+            <div class="servicio">
+                <h3>📦 Envío Seguro</h3>
+                <p>Garantizamos la entrega de tus productos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+        <h2>Productos Recientes</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Ropa Exclusiva</h3>
+                <p>Últimas tendencias de las mejores marcas.</p>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Sneakers Premium</h3>
+                <p>Ediciones limitadas directamente de USA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Importaciones USA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Te responderemos pronto.');
+        });
+    </script>
+</body>
+</html>
