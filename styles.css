@@ -46,13 +46,18 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('fondo.jpg') no-repeat center center/cover;
+    background-image: url('../web/bgrr.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
-    height: 400px;
+    height: 100vh; /* Pantalla completa */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content h1 {
