@@ -63,6 +63,8 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejor visibilidad del texto */
+
 }
 
 .hero-content h1 {
