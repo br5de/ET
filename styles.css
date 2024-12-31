@@ -188,3 +188,7 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejor visibilidad del texto */
     z-index: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+
