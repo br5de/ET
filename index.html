@@ -72,7 +72,10 @@
 <section id="contacto" data-aos="fade-up">
     <h2>Contacto</h2>
     <form data-aos="zoom-in" data-aos-delay="100">
-        <!-- contenido del formulario -->
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar Mensaje</button>
     </form>
 </section>
 
@@ -81,14 +84,20 @@
         <p>&copy; 2024 Importaciones USA. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Gracias por contactarnos! Te responderemos pronto.');
-        });
-        AOS.init({
-            duration: 1000, once: false)}
-    </script>
+<!-- JavaScript -->
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('¡Gracias por contactarnos! Te responderemos pronto.');
+    });
+</script>
+
+<!-- Inicialización de AOS -->
+<script>
+    AOS.init({
+        duration: 1000,
+        once: false
+    });
+</script>
 </body>
 </html>
