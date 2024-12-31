@@ -20,84 +20,91 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     </header>
 
     <!-- Sección de Inicio -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>¡Porque llegar a casa es lo mas importante!</h1>
+            <h1>¡Porque llegar a casa es lo más importante!</h1>
             <p>Compra las mejores marcas de ropa y calzado directamente desde USA.</p>
             <button onclick="window.location.href='#productos'">Explora Productos</button>
         </div>
     </section>
 
     <!-- Sección de Servicios -->
-   <!-- Sección de Servicios -->
-<section id="servicios" data-aos="fade-up">
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-grid">
-        <div class="servicio" data-aos="fade-right" data-aos-delay="100">
-            <h3>💳 Pago Flexible</h3>
-            <p>Paga la mitad al inicio y el resto al recibir.</p>
+    <section id="servicios" data-aos="fade-up">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio" data-aos="fade-right" data-aos-delay="100">
+                <h3>💳 Pago Flexible</h3>
+                <p>Paga la mitad al inicio y el resto al recibir.</p>
+            </div>
+            <div class="servicio" data-aos="fade-up" data-aos-delay="200">
+                <h3>🛒 Compra Personalizada</h3>
+                <p>Nos ajustamos a tus necesidades.</p>
+            </div>
+            <div class="servicio" data-aos="fade-left" data-aos-delay="300">
+                <h3>📦 Envío Seguro</h3>
+                <p>Garantizamos la entrega de tus productos.</p>
+            </div>
         </div>
-        <div class="servicio" data-aos="fade-up" data-aos-delay="200">
-            <h3>🛒 Compra Personalizada</h3>
-            <p>Nos ajustamos a tus necesidades.</p>
-        </div>
-        <div class="servicio" data-aos="fade-left" data-aos-delay="300">
-            <h3>📦 Envío Seguro</h3>
-            <p>Garantizamos la entrega de tus productos.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección de Productos -->
-<section id="productos" data-aos="fade-up">
-    <h2>Productos Recientes</h2>
-    <div class="productos-grid">
-        <div class="producto" data-aos="zoom-in" data-aos-delay="100">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h3>Ropa Exclusiva</h3>
-            <p>Últimas tendencias de las mejores marcas.</p>
+    <!-- Sección de Productos -->
+    <section id="productos" data-aos="fade-up">
+        <h2>Productos Recientes</h2>
+        <div class="productos-grid">
+            <div class="producto" data-aos="zoom-in" data-aos-delay="100">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Ropa Exclusiva</h3>
+                <p>Últimas tendencias de las mejores marcas.</p>
+            </div>
+            <div class="producto" data-aos="zoom-in" data-aos-delay="200">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Sneakers Premium</h3>
+                <p>Ediciones limitadas directamente de USA.</p>
+            </div>
         </div>
-        <div class="producto" data-aos="zoom-in" data-aos-delay="200">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Sneakers Premium</h3>
-            <p>Ediciones limitadas directamente de USA.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sección de Contacto -->
-<section id="contacto" data-aos="fade-up">
-    <h2>Contacto</h2>
-    <form data-aos="zoom-in" data-aos-delay="100">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo Electrónico" required>
-        <textarea placeholder="Mensaje"></textarea>
-        <button type="submit">Enviar Mensaje</button>
-    </form>
-</section>
+    <!-- Sección de Contacto -->
+    <section id="contacto" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <form data-aos="zoom-in" data-aos-delay="100">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
 
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Importaciones USA. Todos los derechos reservados.</p>
     </footer>
 
-<!-- JavaScript -->
-<script>
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('¡Gracias por contactarnos! Te responderemos pronto.');
-    });
-</script>
+    <!-- JavaScript -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Te responderemos pronto.');
+        });
 
-<!-- Inicialización de AOS -->
-<script>
-    AOS.init({
-        duration: 1000,
-        once: false
-    });
-</script>
+        // Menú responsive
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('header nav ul');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Inicialización de AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false
+        });
+    </script>
 </body>
 </html>
