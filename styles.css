@@ -158,7 +158,7 @@ footer {
 /* Hero Section */
 .hero {
     background-image: url('web/bgr.avif');
-/*     background: url() no-repeat center center/cover; */
+    background: url('web/bgr.avif') no-repeat center center/cover; 
     color: white;
     height: 100vh; /* Pantalla completa */
     display: flex;
